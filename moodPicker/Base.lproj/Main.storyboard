@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFM-Tp-wdQ">
-                                <rect key="frame" x="0.0" y="431" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFM-Tp-wdQ">
+                                <rect key="frame" x="28" y="431" width="320" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="FnA-GY-EoT"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="nmG-Dq-Ah8"/>
@@ -31,6 +30,10 @@
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LFM-Tp-wdQ" secondAttribute="bottom" constant="20" symbolic="YES" id="BOj-eM-BbT"/>
+                            <constraint firstItem="LFM-Tp-wdQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYZ-Yz-1Er"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
